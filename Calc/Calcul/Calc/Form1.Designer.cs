@@ -49,6 +49,7 @@
             this.btnOFF = new System.Windows.Forms.Button();
             this.txtScreen = new System.Windows.Forms.TextBox();
             this.btnON = new System.Windows.Forms.Button();
+            this.lblScreen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEqual
@@ -59,6 +60,7 @@
             this.btnEqual.TabIndex = 40;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btn0
             // 
@@ -118,6 +120,7 @@
             this.btnDivide.TabIndex = 34;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
             // btn4
             // 
@@ -157,6 +160,7 @@
             this.btnMultiply.TabIndex = 30;
             this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = true;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
             // 
             // btn7
             // 
@@ -176,6 +180,7 @@
             this.btn8.TabIndex = 28;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn9
             // 
@@ -185,6 +190,7 @@
             this.btn9.TabIndex = 27;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btnMoins
             // 
@@ -194,6 +200,7 @@
             this.btnMoins.TabIndex = 26;
             this.btnMoins.Text = "-";
             this.btnMoins.UseVisualStyleBackColor = true;
+            this.btnMoins.Click += new System.EventHandler(this.btnMoins_Click);
             // 
             // btnPlus
             // 
@@ -203,6 +210,7 @@
             this.btnPlus.TabIndex = 25;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnClear
             // 
@@ -212,6 +220,7 @@
             this.btnClear.TabIndex = 24;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnBackSpace
             // 
@@ -221,6 +230,7 @@
             this.btnBackSpace.TabIndex = 23;
             this.btnBackSpace.Text = "<--";
             this.btnBackSpace.UseVisualStyleBackColor = true;
+            this.btnBackSpace.Click += new System.EventHandler(this.btnBackSpace_Click);
             // 
             // btnOFF
             // 
@@ -251,11 +261,21 @@
             this.btnON.UseVisualStyleBackColor = true;
             this.btnON.Click += new System.EventHandler(this.btnON_Click);
             // 
+            // lblScreen
+            // 
+            this.lblScreen.AutoSize = true;
+            this.lblScreen.Location = new System.Drawing.Point(16, 15);
+            this.lblScreen.Name = "lblScreen";
+            this.lblScreen.Size = new System.Drawing.Size(0, 13);
+            this.lblScreen.TabIndex = 42;
+            this.lblScreen.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(229, 267);
+            this.Controls.Add(this.lblScreen);
             this.Controls.Add(this.btnON);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btn0);
@@ -278,7 +298,7 @@
             this.Controls.Add(this.btnOFF);
             this.Controls.Add(this.txtScreen);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calc";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,6 +327,7 @@
         private System.Windows.Forms.Button btnOFF;
         private System.Windows.Forms.TextBox txtScreen;
         private System.Windows.Forms.Button btnON;
+        private System.Windows.Forms.Label lblScreen;
     }
 }
 

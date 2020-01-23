@@ -151,6 +151,73 @@ namespace Calc
             txtScreen.Text = $"{txtScreen.Text}7";
             txtScreen.ForeColor = Color.Red;
         }
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            txtScreen.Text = $"{txtScreen.Text}8";
+            txtScreen.ForeColor = Color.Red;
+        }
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            txtScreen.Text = $"{txtScreen.Text}9";
+            txtScreen.ForeColor = Color.Red;
+        }
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(txtScreen.Text);
+            txtScreen.Clear();
+            txtScreen.Focus();
+            count = 1;
+            lblScreen.Text = $"{num}+";
+        }
+        private void btnMoins_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(txtScreen.Text);
+            txtScreen.Clear();
+            txtScreen.Focus();
+            count = 2;
+            lblScreen.Text = $"{num}-";
+        }
+        private void btnMultiply_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(txtScreen.Text);
+            txtScreen.Clear();
+            txtScreen.Focus();
+            count = 3;
+            lblScreen.Text = $"{num}*";
+        }
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+            num = float.Parse(txtScreen.Text);
+            txtScreen.Clear();
+            txtScreen.Focus();
+            count = 4;
+            lblScreen.Text = $"{num}/";
+        }
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            compute();
+            lblScreen.Text = "";
+        }
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtScreen.Clear();
+        }
+        private void btnBackSpace_Click(object sender, EventArgs e)
+        {
+            int length = txtScreen.TextLength - 1;
+            string txt = txtScreen.Text;
+            txtScreen.Clear();
+            for (int i = 0; i < length; i++)
+            {
+                txtScreen.Text = $"{txtScreen.Text}{txt[i]}";
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnOFF_Click(object sender, EventArgs e)
         {
             DisableCalc();
