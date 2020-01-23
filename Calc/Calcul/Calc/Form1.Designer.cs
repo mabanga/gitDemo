@@ -48,6 +48,7 @@
             this.btnBackSpace = new System.Windows.Forms.Button();
             this.btnOFF = new System.Windows.Forms.Button();
             this.txtScreen = new System.Windows.Forms.TextBox();
+            this.btnON = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEqual
@@ -67,6 +68,7 @@
             this.btn0.TabIndex = 39;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click);
             // 
             // btnPoint
             // 
@@ -76,6 +78,7 @@
             this.btnPoint.TabIndex = 38;
             this.btnPoint.Text = ".";
             this.btnPoint.UseVisualStyleBackColor = true;
+            this.btnPoint.Click += new System.EventHandler(this.btnPoint_Click);
             // 
             // btn1
             // 
@@ -85,6 +88,7 @@
             this.btn1.TabIndex = 37;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -94,6 +98,7 @@
             this.btn2.TabIndex = 36;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -103,6 +108,7 @@
             this.btn3.TabIndex = 35;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnDivide
             // 
@@ -121,6 +127,7 @@
             this.btn4.TabIndex = 33;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -130,6 +137,7 @@
             this.btn5.TabIndex = 32;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn6
             // 
@@ -139,6 +147,7 @@
             this.btn6.TabIndex = 31;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btnMultiply
             // 
@@ -157,6 +166,7 @@
             this.btn7.TabIndex = 29;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn8
             // 
@@ -220,6 +230,7 @@
             this.btnOFF.TabIndex = 22;
             this.btnOFF.Text = "OFF";
             this.btnOFF.UseVisualStyleBackColor = true;
+            this.btnOFF.Click += new System.EventHandler(this.btnOFF_Click);
             // 
             // txtScreen
             // 
@@ -230,11 +241,22 @@
             this.txtScreen.TabIndex = 21;
             this.txtScreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // btnON
+            // 
+            this.btnON.Location = new System.Drawing.Point(12, 53);
+            this.btnON.Name = "btnON";
+            this.btnON.Size = new System.Drawing.Size(46, 35);
+            this.btnON.TabIndex = 41;
+            this.btnON.Text = "ON";
+            this.btnON.UseVisualStyleBackColor = true;
+            this.btnON.Click += new System.EventHandler(this.btnON_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(229, 267);
+            this.Controls.Add(this.btnON);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btnPoint);
@@ -284,6 +306,7 @@
         private System.Windows.Forms.Button btnBackSpace;
         private System.Windows.Forms.Button btnOFF;
         private System.Windows.Forms.TextBox txtScreen;
+        private System.Windows.Forms.Button btnON;
     }
 }
 
