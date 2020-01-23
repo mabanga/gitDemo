@@ -218,6 +218,11 @@ namespace Calc
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DisableCalc();
+        }
+
         private void btnOFF_Click(object sender, EventArgs e)
         {
             DisableCalc();
